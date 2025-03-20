@@ -27,6 +27,16 @@ For reconstructing missing parts of images, a **generator of synthetic "spots"**
 
 The model was initially trained on the full dataset and then fine-tuned for individual image clusters, allowing for more precise reconstruction specific to each artistic style.
 
+<div style="display: flex; justify-content: space-around;">
+    <img src="images/barn_dmg.png" alt="Cube Small" width="45%">
+    <img src="images/barn_fix.png" alt="Cube Enhanced" width="45%">
+</div>
+
+<div style="display: flex; justify-content: space-around;">
+    <img src="images/chilldude_dmg.png" alt="Cube Small" width="45%">
+    <img src="images/chilldude_fix.png" alt="Cube Enhanced" width="45%">
+</div>
+
 ## Super-Resolution
 
 As part of the project, a model was developed to increase image resolution from **256×256 to 512×512**. The model was trained on lower-resolution images with the task of generating higher-quality details while preserving stylistic elements.
