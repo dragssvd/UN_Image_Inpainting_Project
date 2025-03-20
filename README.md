@@ -20,13 +20,20 @@ To group images based on their visual similarity, an **autoencoder** was designe
 For reconstructing missing parts of images, a **generator of synthetic "spots"** was developed to simulate irregularly shaped damages, with a maximum size of **1/16 of the image**. To enhance the model’s effectiveness in reconstructing missing elements, the loss function was modified by assigning a **10-times higher weight** to pixels within the damaged regions.
 
 The model was initially trained on the full dataset and then fine-tuned for individual image clusters, allowing for more precise reconstruction specific to each artistic style.
-![alt text](images/lady_small.png)
-![alt text](images/lady_enhanced.png)
+
 ## Super-Resolution
 
 As part of the project, a model was developed to increase image resolution from **256×256 to 512×512**. The model was trained on lower-resolution images with the task of generating higher-quality details while preserving stylistic elements.
-![alt text](images/cube_small.png)
-![alt text](images/cube_enhanced.png)
 ---
+
+<div style="display: flex; justify-content: space-around;">
+    <img src="images/cube_small.png" alt="Cube Small" width="45%">
+    <img src="images/cube_enhanced.png" alt="Cube Enhanced" width="45%">
+</div>
+
+<div style="display: flex; justify-content: space-around;">
+    <img src="images/lady_small.png" alt="Lady Small" width="45%">
+    <img src="images/lady_enhanced.png" alt="Lady Enhanced" width="45%">
+</div>
 
 Thanks to the applied techniques and algorithms, the project enables effective **image quality enhancement, reconstruction of damaged artworks, and automatic grouping based on visual similarities**.
