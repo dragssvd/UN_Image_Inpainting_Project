@@ -13,11 +13,7 @@ The project is based on **VGG16** and **U-Net** architectures, which were adapte
 ![alt text](images/autoenc_arch.png)
 ## Image Clustering
 
-To group images based on their visual similarity, an **autoencoder** was designed to map the features of the input image. After training, the **encoder layer** was used for feature extraction, which was then analyzed using clustering techniques. This process resulted in **20 image classes**, reflecting different artistic styles and visual characteristics.
-
-## Data Clusterization
-
-The data clusterization process involves extracting feature vectors from images using the encoder part of the autoencoder and applying clustering algorithms to group images based on visual similarity. This approach resulted in 20 distinct image classes, each representing different artistic styles and visual characteristics, as demonstrated in the `cluster_dataset.ipynb` notebook.
+To group images based on their visual similarity, an **autoencoder** was designed to map the features of the input image. After training, the **encoder layer** was used for feature extraction, which was then analyzed using clustering techniques. This approach resulted in 20 distinct image classes, each representing different artistic styles and visual characteristics, as demonstrated in the `cluster_dataset.ipynb` notebook.
 
 ![alt text](images/clusters_vis.png)
 
