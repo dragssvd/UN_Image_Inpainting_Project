@@ -54,3 +54,5 @@ Thanks to the applied techniques and algorithms, the project enables effective *
 The project includes a Streamlit application that allows users to upload images and see the results of the inpainting and super-resolution models in real-time. The app processes the uploaded image by first reconstructing any damaged parts using the inpainting model and then enhancing the resolution using the super-resolution model. The results are displayed side by side, showing the original image, the inpainted image, and the upscaled image, providing a clear comparison of the improvements made by the models.
 
 ![alt text](images/dog_gentleman.png)
+
+Project made with [@KamilCiepluch](https://github.com/KamilCiepluch)
