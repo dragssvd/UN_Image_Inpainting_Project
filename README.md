@@ -15,6 +15,12 @@ The project is based on **VGG16** and **U-Net** architectures, which were adapte
 
 To group images based on their visual similarity, an **autoencoder** was designed to map the features of the input image. After training, the **encoder layer** was used for feature extraction, which was then analyzed using clustering techniques. This process resulted in **20 image classes**, reflecting different artistic styles and visual characteristics.
 
+## Data Clusterization
+
+The data clusterization process involves extracting feature vectors from images using the encoder part of the autoencoder and applying clustering algorithms to group images based on visual similarity. This approach resulted in 20 distinct image classes, each representing different artistic styles and visual characteristics, as demonstrated in the `cluster_dataset.ipynb` notebook.
+
+![alt text](images/clusters_vis.png)
+
 ## Inpainting – Reconstruction of Damaged Images
 
 For reconstructing missing parts of images, a **generator of synthetic "spots"** was developed to simulate irregularly shaped damages, with a maximum size of **1/16 of the image**. To enhance the model’s effectiveness in reconstructing missing elements, the loss function was modified by assigning a **10-times higher weight** to pixels within the damaged regions.
@@ -36,3 +42,9 @@ As part of the project, a model was developed to increase image resolution from 
 </div>
 
 Thanks to the applied techniques and algorithms, the project enables effective **image quality enhancement, reconstruction of damaged artworks, and automatic grouping based on visual similarities**.
+
+## Streamlit Application
+
+The project includes a Streamlit application that allows users to upload images and see the results of the inpainting and super-resolution models in real-time. The app processes the uploaded image by first reconstructing any damaged parts using the inpainting model and then enhancing the resolution using the super-resolution model. The results are displayed side by side, showing the original image, the inpainted image, and the upscaled image, providing a clear comparison of the improvements made by the models.
+
+![alt text](images/dog_gentleman.png)
