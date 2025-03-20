@@ -24,7 +24,6 @@ The model was initially trained on the full dataset and then fine-tuned for indi
 ## Super-Resolution
 
 As part of the project, a model was developed to increase image resolution from **256×256 to 512×512**. The model was trained on lower-resolution images with the task of generating higher-quality details while preserving stylistic elements.
----
 
 <div style="display: flex; justify-content: space-around;">
     <img src="images/cube_small.png" alt="Cube Small" width="45%">
