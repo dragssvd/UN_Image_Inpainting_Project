@@ -10,7 +10,7 @@ The primary application of this project is the restoration of damaged artworks a
 ## Models and Architecture
 
 The project is based on **VGG16** and **U-Net** architectures, which were adapted for image reconstruction tasks. The autoencoders were trained using **Perceptual Loss** and **MSE (Mean Squared Error) loss functions**, allowing for high-quality reconstruction and improved model effectiveness in resolution enhancement tasks.
-
+![alt text](images/autoenc_arch.png)
 ## Image Clustering
 
 To group images based on their visual similarity, an **autoencoder** was designed to map the features of the input image. After training, the **encoder layer** was used for feature extraction, which was then analyzed using clustering techniques. This process resulted in **20 image classes**, reflecting different artistic styles and visual characteristics.
@@ -20,11 +20,13 @@ To group images based on their visual similarity, an **autoencoder** was designe
 For reconstructing missing parts of images, a **generator of synthetic "spots"** was developed to simulate irregularly shaped damages, with a maximum size of **1/16 of the image**. To enhance the model’s effectiveness in reconstructing missing elements, the loss function was modified by assigning a **10-times higher weight** to pixels within the damaged regions.
 
 The model was initially trained on the full dataset and then fine-tuned for individual image clusters, allowing for more precise reconstruction specific to each artistic style.
-
+![alt text](images/lady_small.png)
+![alt text](images/lady_enhanced.png)
 ## Super-Resolution
 
 As part of the project, a model was developed to increase image resolution from **256×256 to 512×512**. The model was trained on lower-resolution images with the task of generating higher-quality details while preserving stylistic elements.
-
+![alt text](images/cube_small.png)
+![alt text](images/cube_enhanced.png)
 ---
 
 Thanks to the applied techniques and algorithms, the project enables effective **image quality enhancement, reconstruction of damaged artworks, and automatic grouping based on visual similarities**.
